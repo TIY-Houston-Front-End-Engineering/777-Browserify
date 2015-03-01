@@ -82,8 +82,10 @@ body {
 
 img.dynamic {
     opacity: 0;
-    transition: all .25s ease;
+    transform: translateY(1em);
+    transition: opacity .5s ease, transform 0.25s ease;
     &.loaded {
         opacity: 1;
+        transform: translateY(0);
     }
 }
